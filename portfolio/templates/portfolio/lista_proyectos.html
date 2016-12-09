@@ -1,0 +1,12 @@
+{% extends "portfolio/base.html" %}
+{% block contenido %}
+
+<ul class="lista-proyectos">
+    {% for proyecto in proyectos %}
+    <li class="item">
+        {{ proyecto.titulo | upper }} - {{ proyecto.categoria }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
