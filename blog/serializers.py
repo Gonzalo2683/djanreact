@@ -4,8 +4,10 @@ from . import models
 
 
 class PostSerializer(serializers.ModelSerializer):
+
     class Meta:
         fields = (
+
             'id',
             'autor',
             'titulo',
